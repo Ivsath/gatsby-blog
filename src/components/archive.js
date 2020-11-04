@@ -3,7 +3,10 @@ import { Link, useStaticQuery, graphql } from "gatsby"
 
 const POST_ARCHIVE_QUERY = graphql`
   query blogPostArchive {
-    allMarkdownRemark {
+    allMarkdownRemark(
+      limit: 5
+      sort: { order: ASC, fields: frontmatter___date }
+    ) {
       edges {
         node {
           frontmatter {
