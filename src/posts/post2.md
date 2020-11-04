@@ -1,5 +1,5 @@
 ---
-slug: "/second-post"
+slug: "second-post"
 date: "2020-11-03"
 title: "Tea Time with Byron part 2"
 ---

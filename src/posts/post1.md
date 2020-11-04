@@ -1,5 +1,5 @@
 ---
-slug: "/first-post"
+slug: "first-post"
 date: "2020-11-02"
 title: "Tea Time with Byron"
 ---
