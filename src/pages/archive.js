@@ -1,6 +1,8 @@
 import React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
 
+import Layout from "../components/layout"
+
 const POST_ARCHIVE_QUERY = graphql`
   query blogPostArchive {
     allMarkdownRemark(
@@ -23,7 +25,7 @@ const Archive = () => {
   const { allMarkdownRemark } = useStaticQuery(POST_ARCHIVE_QUERY)
 
   return (
-    <>
+    <Layout>
       <aside>
         <h3>Archive</h3>
         <ul>
@@ -37,7 +39,7 @@ const Archive = () => {
           })}
         </ul>
       </aside>
-    </>
+    </Layout>
   )
 }
 
