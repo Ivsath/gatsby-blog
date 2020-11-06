@@ -1,7 +1,6 @@
 import React from "react"
 import { graphql, Link, useStaticQuery } from "gatsby"
 
-import Image from "../components/image"
 import SEO from "../components/seo"
 
 const LISTING_QUERY = graphql`
@@ -44,10 +43,6 @@ const Listing = () => {
     <>
       <SEO title="Home" />
       {articles}
-      <div style={{ maxWidth: `200px`, marginBottom: `1.45rem` }}>
-        <Image />
-      </div>
-      <Link to="/archive">Go to archive</Link>
     </>
   )
 }
