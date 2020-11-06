@@ -3,11 +3,11 @@ import { graphql } from "gatsby"
 
 import Layout from "./layout"
 
-export default function ({ data }) {
+export default function ({ location, data }) {
   const { markdownRemark } = data
 
   return (
-    <Layout>
+    <Layout location={location}>
       <h1>{markdownRemark.frontmatter.title}</h1>
       <div dangerouslySetInnerHTML={{ __html: markdownRemark.html }}></div>
     </Layout>
